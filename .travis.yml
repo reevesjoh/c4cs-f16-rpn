@@ -3,4 +3,4 @@ python:
 - "3.3"
 - "3.4"
 - "3.5"
-script: python3 -m unittest test_rpn
+script: python -m unittest test_rpn
