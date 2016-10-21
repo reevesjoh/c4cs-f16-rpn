@@ -8,7 +8,11 @@ operators = {
 	'*': operator.mul,
 	'/': operator.truediv,
 	'^': operator.pow,
+	'%': operator.mod,
 }
+
+def printPrompt():
+	print("Welcome to RPN calculator")
 
 def calculate(myarg):
 	stack = list()
@@ -30,6 +34,7 @@ def calculate(myarg):
 
 def main():
 	while True:
+		printPrompt()
 		result = calculate(input("rpn calc> "))
 		print("Result: ", result)
 
